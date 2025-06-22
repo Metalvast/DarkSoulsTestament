@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "DarkSoulsTestament.WebApp",
   "resources": {
-    "hash": "sha256-q79nLC7Q9bJOoHpgNaAe/ycyrjlw0t6YNTdge/9zu6g=",
+    "hash": "sha256-6OqEJ3JMv2HiTe/hmBsDIwTjiqbqoj5lqGkdAtFzZ+4=",
     "jsModuleNative": {
       "dotnet.native.8.0.17.93jl6dms3i.js": "sha256-isT0lawYeHUiqgYo81iMpj+aNNNd4aBkWhzbQVDg4QU="
     },
@@ -23,7 +23,7 @@
       "ActualLab.Fusion.wasm": "sha256-t5bXvqGL38rOhwAqlYtyn0hbE3nAH9jy84MsJogQGWs=",
       "ActualLab.Interception.wasm": "sha256-k9EtChBppb35CYisRcXQMFr0fCBcgBTVQH3DWDYoap8=",
       "ActualLab.Rpc.wasm": "sha256-I5cGPRWVumf9I6whH1I30rA5f6xT1LuWJoA7erQxOHQ=",
-      "DarkSoulsTestament.WebApp.wasm": "sha256-eMWFmR6qTL7GqZGEAXg0l7II4SPJZVbPX4iJv7LsQEY=",
+      "DarkSoulsTestament.WebApp.wasm": "sha256-ffLKD1gCgmlT92BI85NOQeR1by+BnE6JNSTbF3qm1T8=",
       "FluentValidation.wasm": "sha256-1akWVGgQZ9ojnoh8cEfeVZK+gNpDt7EOzVVPLa0T/iQ=",
       "MemoryPack.Core.wasm": "sha256-zK4XPaYdOtVXp+WXGgODzMNxSHlvyydyczgSdOA4+HU=",
       "MessagePack.Annotations.wasm": "sha256-cZ507gjmMCNcq98TLHIaVgekPBBiuUiApMYO7btMn/E=",
