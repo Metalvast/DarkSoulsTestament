@@ -1,0 +1,42 @@
+name: "Deploy Demo"
+
+on:
+ push:
+  branches:
+   - 'master'
+
+permissions:
+  contents: write
+
+jobs:
+ deploy:
+  name: Deploy
+  runs-on: ubuntu-latest
+  steps:
+  - name: Checkout
+    uses: actions/checkout@v4
+
+  - name: Install dotnet
+    uses: actions/setup-dotnet@v4
+    with:
+     global-json-file: global.json
+
+  - name: Install workloads
+    run: dotnet workload install wasm-tools
+    
+  - name: Publish
+    run: dotnet publish ./src/DarkSoulsTestament.WebApp/DarkSoulsTestament.WebApp.csproj -c Release --output release
+
+    # changes the base-tag in index.html from '/' to 'Testaments' to match GitHub Pages repository subdirectory
+  - name: Change base-tag in index.html from / to Testaments
+    run: sed -i 's/<base href="\/" \/>/<base href="\/Testaments\/" \/>/g' release/wwwroot/index.html
+
+  # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+  - name: Add .nojekyll file
+    run: touch release/wwwroot/.nojekyll
+
+  - name: Uploading files to gh-pages branch
+    uses: JamesIves/github-pages-deploy-action@v4
+    with:
+      branch: gh-pages
+      folder: release/wwwroot

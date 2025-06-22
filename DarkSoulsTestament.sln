@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{BA9161F6-88C0-4C95-AC73-27A369F18FF3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.filenesting.json = .filenesting.json
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		dotnet-tools.json = dotnet-tools.json
+		global.json = global.json
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsTestament.WebApp", "src\DarkSoulsTestament.WebApp\DarkSoulsTestament.WebApp.csproj", "{FB4F70FB-2AC9-B8FE-A736-A96CFC5C5B5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{F57F673F-5ABB-4F1B-830E-7FA42295159B}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\site-publish.yml = .github\workflows\site-publish.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB4F70FB-2AC9-B8FE-A736-A96CFC5C5B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4F70FB-2AC9-B8FE-A736-A96CFC5C5B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4F70FB-2AC9-B8FE-A736-A96CFC5C5B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4F70FB-2AC9-B8FE-A736-A96CFC5C5B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB4F70FB-2AC9-B8FE-A736-A96CFC5C5B5F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D85213FE-4351-4C67-9BD2-BE37E27134C7}
+	EndGlobalSection
+EndGlobal

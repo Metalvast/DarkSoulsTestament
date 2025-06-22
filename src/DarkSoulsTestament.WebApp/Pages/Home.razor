@@ -1,0 +1,33 @@
+﻿@using MudBlazor
+
+@page "/"
+
+<PageTitle>Универсамовские скрижали</PageTitle>
+
+<div class="w-100 h-100 overflow-hidden absolute">
+    <img src="/tablets.png"
+         style="object-fit: fill; z-index: -1;"
+         class="w-100 h-100" />
+    <div style="top: 20%; left: 27%;"
+         class="d-flex flex-column align-center justify-center gap-16 absolute">
+        @foreach (var testament in _oneToFiveTestaments)
+        {
+            <MudText Typo="Typo.h4"
+                     Align="Align.Center"
+                     Class="fw-bold">
+                @testament
+            </MudText>
+        }
+    </div>
+    <div style="top: 27%; left: 55.5%;"
+         class="d-flex flex-column align-center justify-center gap-11 absolute">
+        @foreach (var testament in _sixToTenTestaments)
+        {
+            <MudText Typo="Typo.h4"
+                     Align="Align.Center"
+                     Class="fw-bold">
+                @testament
+            </MudText>
+        }
+    </div>
+</div>
