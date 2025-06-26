@@ -8,7 +8,7 @@ public partial class Home
     private static readonly ImmutableList<MarkupString> _oneToFiveTestaments = new List<MarkupString>
     {
         new("1. Запрещён перекач"),
-        new("2. Запрещены суммоны"),
+        new("2. Запрещены суммоны<br /> (Даже если очень тяжело)"),
         new("3. Запрещён мультиплеер"),
         new("4. Запрещено смотреть <br /> подсказки разраба"),
         new("5. Запрещены дамажущая <br /> магия/чудеса/пиромантия")
